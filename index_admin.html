@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- Bootstrap CSS -->
+		<!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		-->
+		<link rel="stylesheet" href="/bootstrap-4.4.1-dist/css/bootstrap.min.css">
+		<link rel="stylesheet" href="/fancybox-master/src/css/core.css">
+		<link rel="stylesheet" href="/css/main.css">
+
+		<title>Be smart | станьте умнее вместе с нами</title>
+	</head>
+	<body>
+
+
+	<nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+		<!-- Brand -->
+		<a class="navbar-brand" href="/">BE SMART</a>
+
+		<!-- Toggler/collapsibe Button -->
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<!-- Navbar links -->
+		<div class="collapse navbar-collapse" id="collapsibleNavbar">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link" href="#">Лучшие преподаватели</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Стать преподавателем</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">О нас</a>
+				</li>
+			</ul>
+		</div>
+
+		<a class="signInLink" href="">Войти/Регистрация</a>
+	</nav>
+
+
+	<div class="container" id="catalog_teachers">
+		<form>
+			<div class="row">
+				<div class="col-md">
+						<label for="disciplineSelect">Дисциплина</label>
+						<select class="form-control" id = "disciplineSelect">
+							<option>Математика</option>
+							<option>Физика</option>
+							<option>Химия</option>
+						</select>
+				</div>
+				<div class="col-md">
+						<label for="price">Цена за час</label>
+						<select class="form-control" id = "price">
+							<option>От 300 до 600 руб</option>
+							<option>От 600 до 1000 руб</option>
+							<option>От 1000 до 1500 руб</option>
+							<option>Свыше 1500 руб</option>
+						</select>
+				</div>
+				<div class="col-md">
+					<button type="submit" class="btn btn-primary" id="btnSearchTeach">Найти</button>
+				</div>
+				<div class="col-md-4">
+					<button type="submit" class="btn btn-outline-success" id="addTeach">Добавить преподавателя</button>
+				</div>
+
+			</div>
+		</form>
+
+		<div class="row">
+
+			<div class="col-md">
+				<div class="card">
+					<div class="card-body">
+						<h4 class="card-title">
+							Иван Иванович
+							<small class="text-muted nameDiscipline">Математика</small>
+						</h4>
+						<a data-fancybox="gallery" href="/img/ivanov1_big.jpg">
+							<img class = "img-left" src="/img/ivanov1_small.jpg">
+						</a>
+						<p class="card-text">Закончил Московский государственный университет по специальности прикладная математика</p>
+						<p class="card-text">Имею богатый опыт преподавания. Работал преподавателем в университете 10 лет. 2 года занимаюсь репетиторством.</p>
+						<a href="teacher.html" class="btn btn-primary">Подробнее...</a>
+						<p class="textPrice text-right">350 руб/ч</p>
+
+						<div class = "adminPanel">
+						<form>
+							<div class="row">
+								<div class="col-md">
+									<button type="submit" class="btn btn-outline-warning" id="delTeach_1">Удалить</button>
+								</div>
+								<div class="col-md">
+									<a href="/teacher_admin.html" class="btn btn-outline-primary" id="changeTeach_1" >Изменить</a>
+								</div>
+							</div>
+						</form>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="col-md">
+				<div class="card">
+					<div class="card-body">
+						<h4 class="card-title">
+							Мария Сергеевна
+							<small class="text-muted nameDiscipline">Физика</small>
+						</h4>
+						<a data-fancybox="gallery" href="/img/ivanova1_big.jpg">
+							<img class = "img-left" src="/img/ivanova1_small.jpg">
+						</a>
+						<p class="card-text">Закончила Московский государственный университет по специальности прикладная математика</p>
+						<p class="card-text">Имею богатый опыт преподавания. Работал преподавателем в университете 10 лет. 2 года занимаюсь репетиторством.</p>
+						<a href="#" class="btn btn-primary">Подробнее...</a>
+						<p class="textPrice text-right">550 руб/ч</p>
+						<div class = "adminPanel">
+							<form>
+								<div class="row">
+									<div class="col-md">
+										<button type="submit" class="btn btn-outline-warning" id="delTeach_2">Удалить</button>
+									</div>
+									<div class="col-md">
+										<button type="submit" class="btn btn-outline-primary" id="changeTeach_2">Изменить</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<div class="row">
+
+			<div class="col-md">
+				<div class="card">
+					<div class="card-body">
+						<h4 class="card-title">
+							Аркадий Степанович
+							<small class="text-muted nameDiscipline">Физика</small></h4>
+						<a data-fancybox="gallery" href="/img/petrov1_big.jpg">
+							<img class = "img-left" src="/img/petrov1_small.jpg">
+						</a>
+						<p class="card-text">Закончил Московский государственный университет по специальности прикладная математика</p>
+						<p class="card-text">Имею богатый опыт преподавания. Работал преподавателем в университете 10 лет. 2 года занимаюсь репетиторством.</p>
+						<a href="#" class="btn btn-primary">Подробнее...</a>
+						<p class="textPrice text-right">500 руб/ч</p>
+						<div class = "adminPanel">
+							<form>
+								<div class="row">
+									<div class="col-md">
+										<button type="submit" class="btn btn-outline-warning" id="delTeach_3">Удалить</button>
+									</div>
+									<div class="col-md">
+										<button type="submit" class="btn btn-outline-primary" id="changeTeach_3">Изменить</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="col-md">
+				<div class="card">
+					<div class="card-body">
+						<h4 class="card-title">
+							Софья Васильевна
+							<small class="text-muted nameDiscipline">Химия</small>
+						</h4>
+						<a data-fancybox="gallery" href="/img/archipova1_big.jpg">
+							<img class = "img-left" src="/img/archipova1_small.jpg">
+						</a>
+						<p class="card-text">Закончила Московский государственный университет по специальности прикладная математика</p>
+						<p class="card-text">Имею богатый опыт преподавания. Работал преподавателем в университете 10 лет. 2 года занимаюсь репетиторством.</p>
+						<a href="#" class="btn btn-primary">Подробнее...</a>
+						<p class="textPrice text-right">450 руб/ч</p>
+						<div class = "adminPanel">
+							<form>
+								<div class="row">
+									<div class="col-md">
+										<button type="submit" class="btn btn-outline-warning" id="delTeach_4">Удалить</button>
+									</div>
+									<div class="col-md">
+										<button type="submit" class="btn btn-outline-primary" id="changeTeach_4">Изменить</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+
+	<!-- Footer -->
+	<footer class="page-footer font-small bg-dark  align-bottom">
+
+		<!-- Copyright -->
+		<div class="footer-copyright text-center py-3 text-white">© 2020 Copyright
+			<a href="http://besmart.local/">  besmart.local</a>
+			<p class="contacts text-white">Телефон: 8-800-890-23-34</p>
+		</div>
+		<!-- Copyright -->
+
+	</footer>
+	<!-- Footer -->
+
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<!--		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>-->
+
+	<script src="/bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
+
+<!--		<script src="/fancybox-master/jquery.fancybox.min.js"></script>-->
+		<script src="/fancybox-master/src/js/core.js"></script>
+	</body>
+</html>
